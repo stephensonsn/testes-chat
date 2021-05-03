@@ -116,12 +116,24 @@ html {
       <p>Para não se preocupar com infra estrutura em grande escala.</p>
     </div>
   </div>
-  <iframe
+  
+  <!--
+  <iframe>
     allow="microphone;"
     width="350"
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/77151b76-90eb-413e-8e01-9758c8b3c762">
   </iframe>  
+  -->  
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Project_Unique_Code"
+    agent-id="77151b76-90eb-413e-8e01-9758c8b3c762"
+    language-code="pt-br"
+  >
+  </df-messenger>
+
 </div>
 
 <div class="footer">
