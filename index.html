@@ -7,11 +7,13 @@
   box-sizing: border-box;
 }
   
-df-messenger {
-    height: 300px;
-    max-height: 70%;
-    min-height: 30%;
+.chat-wrapper[opened="true"] {
+
+   height:73% !important;
+
+  width: 35% !important;
 }  
+  
 .row::after {
   content: "";
   clear: both;
@@ -66,6 +68,10 @@ html {
   text-align: center;
   font-size: 12px;
   padding: 15px;
+}
+
+#chatbot {
+width: 500px;  
 }
 
 /* For mobile phones: */
@@ -137,24 +143,18 @@ html {
       <p>Para não se preocupar com infra estrutura em grande escala.</p>
     </div>
   </div>
-  
-  <!--
-  <iframe>
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/77151b76-90eb-413e-8e01-9758c8b3c762">
-  </iframe>  
-  -->  
-  <meta name="viewport" content="width-device-width, initial-scale=1">
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+	
   <df-messenger
     intent="WELCOME"
     chat-title="Project_Unique_Code"
     agent-id="77151b76-90eb-413e-8e01-9758c8b3c762"
-    language-code="pt-br"
-  >
+    language-code="pt-br">
   </df-messenger>
+	
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
 </div>
 
